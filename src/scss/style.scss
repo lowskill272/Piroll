@@ -1,0 +1,579 @@
+@import 'normalize.scss';
+
+// === Mixins ===
+@mixin font-nunito-sans{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+@mixin font-montserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+// === / Mixins ===
+
+// === Variables ===
+$black-color: #191919;
+$gray-color: #787878;
+$background-gray-color: #f8f9f9;
+$lightblue-color: #10c9c3;
+// === / Variables ===
+
+// === Common ===
+.section-outer {
+
+}
+
+.section-inner {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.title{
+  color: $black-color;
+  @include font-montserrat;
+}
+
+.subtitle{
+  color: $gray-color;
+  @include font-nunito-sans;
+}
+
+.button{
+  @include font-montserrat;
+  padding: 0;
+  cursor: pointer;
+  width: 180px;
+  height: 54px;
+  background-color: $lightblue-color;
+  border: 0;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: white;
+  outline: none;
+}
+// === / Common ===
+
+// === header ===
+.section-header {
+    background: linear-gradient(to right, #d8d8d8, lightblue);
+
+  .section-inner{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  &-top{
+    display: flex;
+    flex-shrink: 1;
+    justify-content: space-between;
+
+    &-wrapper{
+      display: flex;
+      flex-direction: column;
+      flex-basis: 50%;
+      justify-content: center;
+    }
+
+  }
+
+  &-bottom{
+    flex-grow: 1;
+    display: flex;
+
+    &-wrapper{
+      display: flex;
+      flex-direction: column;
+      flex-basis: 40%;
+      justify-content: center;
+
+      .title,
+      .subtitle{
+        width: 100%;
+        text-align: left;
+      }
+
+      .title{
+        font-size: 38px;
+        font-weight: bold;
+        line-height: 48px;
+        margin-bottom: 30px;
+      }
+
+      .subtitle{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 40px;
+      }
+
+      &__button{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+      }
+
+    }
+
+  }
+
+  &__logo{
+    padding-top: 40px;
+  }
+
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 40px;
+
+    li{
+
+      a{
+        @include font-montserrat;
+        color: $black-color;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        text-decoration: none;
+
+        &.active{
+          color: $lightblue-color;
+        }
+
+      }
+
+    }
+
+  }
+
+  &-content{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+}
+// === / header ===
+
+// === about ===
+.section-about {
+  background-color: #ffffff;
+
+  .section-inner{
+    display: flex;
+    align-items: center;
+    height: 50vh;
+  }
+
+  &-wrapper{
+
+  }
+
+  .title,
+  .subtitle,
+  &__sign{
+    text-align: center;
+  }
+
+  .title{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    margin-bottom: 40px;
+  }
+
+  .subtitle{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+    margin-bottom: 35px;
+  }
+
+  &__sign{
+
+  }
+
+}
+// === / about ===
+
+// === skills ===
+.section-skills {
+    background-color: #f8f9f9;
+
+  .section-inner{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    justify-content: flex-start;
+  }
+
+  &-left{
+    flex-basis: 50%;
+  }
+
+  &-right{
+    flex-basis: 50%;
+  }
+
+  &-wrapper{
+    flex-basis: 50%;
+
+    .title{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 0.3px;
+      margin-bottom: 40px;
+    }
+
+  }
+
+  &-stats{
+
+    &__title{
+      @include font-montserrat;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 20px;
+    }
+
+    .percents{
+      height: 3px;
+      width: 100%;
+      display: flex;
+
+      .filled{
+        height: 100%;
+        background-color: $lightblue-color;
+      }
+
+      .empty{
+        height: 100%;
+        background-color: #d8d8d8;
+      }
+
+    }
+
+    &-design{
+      margin-bottom: 40px;
+
+      &__percents{
+
+        .filled{
+          width: 75%;
+        }
+
+        .empty{
+          width: 25%;
+        }
+
+      }
+
+    }
+
+    &-web{
+      margin-bottom: 40px;
+
+      &__percents{
+
+        .filled{
+          width: 90%;
+        }
+
+        .empty{
+          width: 10%;
+        }
+
+      }
+
+    }
+
+    &-marketing{
+      margin-bottom: 40px;
+
+      &__percents{
+
+        .filled{
+          width: 65%;
+        }
+
+        .empty{
+          width: 35%;
+        }
+
+      }
+
+    }
+
+  }
+
+
+}
+// === / skills ===
+
+// === numbers ===
+.section-numbers {
+  @include font-montserrat;
+  background: $lightblue-color;
+  color: #ffffff;
+
+  .section-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35vh;
+  }
+
+  .section-numbers-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icon{
+    margin-right: 25px;
+
+    path{
+      fill: white;
+    }
+
+  }
+
+  &__number{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.54px;
+    margin-bottom: 15px;
+  }
+  &__title{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+
+  &-hours,
+  &-projects,
+  &-feedbacks,
+  &-clients{
+    display: flex;
+    align-items: center;
+  }
+
+}
+// === / numbers ===
+
+// === work ===
+.section-work {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+
+  &-item{
+    background: linear-gradient(45deg, #dddddd, lightblue);
+    height: 45%;
+    width: 25%;
+  }
+
+  &-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    background-color: #f5f5f5;
+    @include font-montserrat;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: $gray-color;
+  }
+
+}
+// === / work ===
+
+// === process ===
+.section-process {
+
+  .section-inner{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title{
+    padding-top: 100px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+  }
+
+  .subtitle{
+    width: 45%;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+  }
+
+  &__video{
+    margin-bottom: 100px;
+    background: $gray-color;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__button{
+    width: 85px;
+    height: 85px;
+    background: $lightblue-color;
+    border: 0;
+    border-radius: 100%;
+    outline: none;
+  }
+
+}
+// === / process ===
+
+// === services ===
+.section-services {
+  background-color: #f5f5f5;
+
+  .section-inner{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+  }
+
+  &-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+
+    &__icon{
+      margin-bottom: 30px;
+
+      path{
+        fill: #656565;
+      }
+    }
+
+    .title{
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle{
+      width: 85%;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.08px;
+    }
+
+  }
+
+  &-item:nth-child(n+5){
+    margin-top: 60px;
+  }
+
+}
+// === / services ===
+
+// === testimonials ===
+.section-testimonials {
+  @include font-montserrat;
+  background-color: $lightblue-color;
+  color: #ffffff;
+
+  .section-inner{
+    display: flex;
+    align-items: center;
+    height: 60vh;
+  }
+
+  &-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__text{
+    text-align: center;
+    width: 75%;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.3px;
+    margin-bottom: 35px;
+  }
+
+  &__author{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+
+}
+// === / testimonials ===
+
+// === clients ===
+.section-clients {
+
+  .section-inner{
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-item{
+    padding: 0 35px;
+  }
+
+}
+// === / clients ===
+
+// === form ===
+.section-form {
+
+}
+// === / form ===
+
+// === footer ===
+.section-footer {
+
+}
+// === / footer ===

@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --mode development --watch --hot",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open",
+    "clear": "del-cli dist"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,7 @@
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "autoclasscss": "0.0.5",
     "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.1.0",
