@@ -1,6 +1,3 @@
-import $ from 'jquery';
-
-
 
 function isAnyPartOfElementInViewport(el) {
 
