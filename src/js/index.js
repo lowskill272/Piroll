@@ -1,7 +1,5 @@
 import $ from 'jquery';
-import '../scss/style.scss';
-
-  
+import '../scss/style.scss';  
 
 
 
@@ -30,48 +28,3 @@ window.addEventListener('scroll', function () {
         }
     } 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// window.addEventListener('scroll', function () {
-//     console.log(window.scrollY + 'px');
-// });
-
-// let arr = document.getElementsByClassName('section-outer');
-
-// for(let i=0;i<document.getElementsByClassName('section-outer').length;i++){
-//     console.log(arr[i], arr[i].offsetTop);    
-// }
-
-// $(window).scroll(function () {
-//     if ($(window).scrollTop() > 100) {
-//         $('.section - about').addClass('visible animated fadeIn');
-//     }
-
-// })
-
