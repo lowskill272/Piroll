@@ -3,13 +3,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Document</title> 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Nunito+Sans&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
 </head>
 <body>
   <!-- Header -->
-  <section class="section-outer section-header">
+  <section class="section-outer section-header" id="home">
     <div class="section-inner">
       <div class="section-header-top">
         <div class="section-header__logo">
@@ -17,13 +17,13 @@
         </div>
         <div class="section-header-top-wrapper">
           <ul class="section-header__nav">
-            <li><a href="#" class="active">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">work</a></li>
-            <li><a href="#">process</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">testimonials</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#work">work</a></li>
+            <li><a href="#process">process</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#testimonials">testimonials</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </div>
       </div>
@@ -47,7 +47,7 @@
   <!-- / Header -->
 
   <!-- About -->
-  <section class="section-outer section-about">
+  <section class="section-outer section-about" id="about">
     <div class="section-inner">
       <div class="section-about-wrapper">
         <div class="title">About Us</div>
@@ -65,7 +65,7 @@
   <!-- / About -->
 
   <!-- Skills -->
-  <section class="section-outer section-skills">
+  <section class="section-outer section-skills" id="skills">
     <div class="section-inner">
       <div class="section-skills-wrapper">
         <div class="title">Professional Skills</div>
@@ -93,12 +93,15 @@
           </div>
         </div>
       </div>
+      <div class="section-skills-image">
+        <img src="src/images/skills.png" alt="">
+      </div>
     </div>
   </section>
   <!-- / Skills -->
 
   <!-- Numbers -->
-  <section class="section-outer section-numbers">
+  <section class="section-outer section-numbers" id="numbers">
     <div class="section-inner">
       <div class="section-numbers-projects">
         <div class="section-numbers__icon">
@@ -190,21 +193,21 @@
   <!-- / Numbers -->
 
   <!-- Work -->
-  <section class="section-outer section-work">
-    <div class="section-work-item"></div>
-    <div class="section-work-item"></div>
-    <div class="section-work-item"></div>
-    <div class="section-work-item"></div>
-    <div class="section-work-item"></div>
-    <div class="section-work-item"></div>
-    <div class="section-work-item"></div>
-    <div class="section-work-item"></div>
+  <section class="section-outer section-work" id="work">
+    <div class="section-work-item"><img src="#" alt=""></div>
+    <div class="section-work-item"><img src="#" alt=""></div>
+    <div class="section-work-item"><img src="#" alt=""></div>
+    <div class="section-work-item"><img src="#" alt=""></div>
+    <div class="section-work-item"><img src="#" alt=""></div>
+    <div class="section-work-item"><img src="#" alt=""></div>
+    <div class="section-work-item"><img src="#" alt=""></div>
+    <div class="section-work-item"><img src="#" alt=""></div>
     <div class="section-work-more">load more work</div>
   </section>
   <!-- / Work -->
 
   <!-- Process -->
-  <section class="section-outer section-process">
+  <section class="section-outer section-process" id="process">
     <div class="section-inner">
       <div class="title">Our Work Process</div>
       <div class="subtitle">
@@ -223,7 +226,7 @@
   <!-- / Process -->
 
   <!-- Services -->
-  <section class="section-outer section-services">
+  <section class="section-outer section-services" id="services">
     <div class="section-inner">
       <div class="section-services-wrapper">
         <div class="section-services-item">
@@ -480,7 +483,7 @@
   <!-- / Services -->
 
   <!-- Testimonials -->
-  <section class="section-outer section-testimonials">
+  <section class="section-outer section-testimonials" id="testimonials">
     <div class="section-inner">
       <div class="section-testimonials-wrapper">
         <div class="section-testimonials__text">
@@ -495,7 +498,7 @@
   <!-- / Testimonials -->
 
   <!-- Clients -->
-  <section class="section-outer section-clients">
+  <section class="section-outer section-clients" id="clients">
     <div class="section-inner">
       <div class="section-clients-item">
         <div class="section-clients-item__logo">
@@ -527,18 +530,69 @@
   <!-- / Clients -->
 
   <!-- Form -->
-  <section class="section-outer section-form">
-    <div class="section-inner">section-form</div>
+  <section class="section-outer section-form" id="contact">
+    <div class="section-inner">
+      <div class="title">Need a Project?</div>
+      <div class="subtitle">Let us know what you're looking for in an agency. We'll take a look and see
+      if this could be the start of something beautiful.</div>
+      <div class="section-form-wrapper">
+        <div class="section-form__input section-form__input_name">
+          <input type="text" placeholder="Your Name">
+        </div>
+        <div class="section-form__input section-form__input_email">
+          <input type="text" placeholder="Your Email">
+        </div>
+        <div class="section-form__input section-form__input_title">
+          <input type="text" placeholder="Your Title">
+        </div>
+        <div class="section-form__input section-form__input_comment">
+          <textarea name="comment" id="" cols="30" rows="10" placeholder="Your Comment"></textarea>
+        </div>
+        <div class="section-form__button">
+          <button class="button">send message</button>
+        </div>
+      </div> 
+    </div>
   </section>
   <!-- / Form -->
 
   <!-- Footer -->
-  <section class="section-outer section-footer">
-    <div class="section-inner">section-footer</div>
+  <section class="section-outer section-footer" id="footer">
+    <div class="section-inner">
+      <div class="section-footer-rights">
+        <div class="title">Piroll Design, Inc.</div>
+        <div class="subtitle">© 2017 Piroll. All rights reserved.
+        Designed by robirurk.</div>
+      </div>
+      <div class="section-footer-contacts">
+        <div class="section-footer-contacts__email"><a href="mailto:hello@pirolltheme.com">hello@pirolltheme.com</a></div>
+        <div class="section-footer-contacts__phone"><a href="tel:+44 987 065 908">+44 987 065 908</a></div>
+      </div>
+      <div class="section-footer-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#work">Projects</a></li>
+          <li><a href="#numbers">Numbers</a></li>
+          <li><a href="#contact">Сontact</a></li>
+          <li><a href="#">Legals</a></li>
+        </ul>
+      </div>
+      <div class="section-footer-socials">
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Dribbble</a></li>
+        </ul>
+      </div>
+    </div>
   </section>
   <!-- / Footer -->
 
 
-  <script src="dist/js/bundle.js"></script>
+  <script src="src/js/index.js"></script>
 </body>
 </html>
