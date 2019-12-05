@@ -1,0 +1,84 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+
+// === form ===
+.section-form {
+  background: $background-gray-color;
+
+  .section-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+  }
+
+  .title{
+    font-size: 30px;
+    font-weight: bold;    
+    letter-spacing: 0.3px;
+    margin-bottom: 35px;
+  }
+
+  .subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;    
+    letter-spacing: 0.08px;
+    width: 45%;
+    margin: 0 auto 38px;
+    text-align: center;
+  }
+
+  &-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 55%;
+    @include font-nunito-sans;
+    font-size: 15px;
+    font-weight: 400;           
+    letter-spacing: 0.07px;
+  }
+
+  &__input{
+
+    margin-bottom: 30px;
+
+    input, textarea{     
+      width: 100%;
+      border: 0;
+      padding: 18px 20px;
+      outline: none;
+      resize: none;
+
+      &:hover{
+        cursor: pointer;        ; 
+        box-shadow: inset 0 0 0 1px #c3c9db;        
+      }
+
+      &:focus{
+        box-shadow: inset 0 0 0 1px #8288a2;
+      }
+    }    
+
+    &_name, &_email{
+      width: 48%;     
+
+    }
+
+    &_title, &_comment{
+      width: 100%;
+    }
+
+    &::placeholder{
+      color: $gray-color;
+    }
+  }
+
+  &__button{
+    margin: 0 auto;
+  }
+
+}
+// === / form ===

@@ -1,0 +1,81 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+
+// === footer ===
+.section-footer {
+  background: $black-color;  
+  // 30 30 20 20
+
+  a{
+    text-decoration: none;
+    @include font-nunito-sans;
+    color: #bcbcbc;   
+    letter-spacing: 0.07px;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 15px; 
+  }
+
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+
+  .section-inner{
+    display: flex;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    
+  }
+
+  &-rights{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .title{
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 500;      
+      letter-spacing: 0.18px;
+      margin-bottom: 27px;
+    }
+    .subtitle{
+      width: 65%;
+      color: #bcbcbc;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;      
+      letter-spacing: 0.07px;
+    }
+  }
+
+  &-contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    width: 40%;
+  }
+
+  &-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    ul{      
+      column-count: 2;
+      list-style-type: none;  
+    }
+  }
+
+  &-socials{
+    display: flex;
+    justify-content: flex-end;
+    width: 15%;
+    ul{
+      list-style-type: none;  
+    }
+  }
+}
+// === / footer ===

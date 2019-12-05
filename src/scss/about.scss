@@ -1,0 +1,46 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+// === about ===
+.section-about {  
+  background-color: #ffffff;
+
+  .section-inner{
+    display: flex;
+    align-items: center;
+    height: 50vh;
+  }
+
+  &-wrapper{
+
+  }
+
+  .title,
+  .subtitle,
+  &__sign{
+    text-align: center;
+  }
+
+  .title{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    margin-bottom: 40px;
+  }
+
+  .subtitle{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+    margin-bottom: 35px;
+  }
+
+  &__sign{
+
+  }
+
+}
+// === / about ===

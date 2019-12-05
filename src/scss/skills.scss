@@ -1,0 +1,120 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+
+// === skills ===
+.section-skills {
+    background-color: #f8f9f9;
+
+  .section-inner{
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    justify-content: flex-start;
+  }  
+
+  &-image{
+    width: 50%;
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-wrapper{
+    width: 50%;
+
+    .title{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 0.3px;
+      margin-bottom: 40px;
+    }
+
+  }
+
+  &-stats{
+
+    &__title{
+      @include font-montserrat;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 20px;
+    }
+
+    .percents{
+      height: 3px;
+      width: 100%;
+      display: flex;
+
+      .filled{
+        height: 100%;
+        background-color: $lightblue-color;
+      }
+
+      .empty{
+        height: 100%;
+        background-color: #d8d8d8;
+      }
+
+    }
+
+    &-design{
+      margin-bottom: 40px;
+
+      &__percents{
+
+        .filled{
+          width: 75%;
+        }
+
+        .empty{
+          width: 25%;
+        }
+
+      }
+
+    }
+
+    &-web{
+      margin-bottom: 40px;
+
+      &__percents{
+
+        .filled{
+          width: 90%;
+        }
+
+        .empty{
+          width: 10%;
+        }
+
+      }
+
+    }
+
+    &-marketing{
+      margin-bottom: 40px;
+
+      &__percents{
+
+        .filled{
+          width: 65%;
+        }
+
+        .empty{
+          width: 35%;
+        }
+
+      }
+
+    }
+
+  }
+
+
+}
+// === / skills ===

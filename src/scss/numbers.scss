@@ -1,0 +1,55 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+
+// === numbers ===
+.section-numbers {
+  @include font-montserrat;
+  background: $lightblue-color;
+  color: #ffffff;
+
+  .section-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35vh;
+  }
+
+  .section-numbers-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icon{
+    margin-right: 25px;
+
+    path{
+      fill: white;
+    }
+
+  }
+
+  &__number{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.54px;
+    margin-bottom: 15px;
+  }
+  &__title{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+
+  &-hours,
+  &-projects,
+  &-feedbacks,
+  &-clients{
+    display: flex;
+    align-items: center;
+  }
+
+}
+// === / numbers ===

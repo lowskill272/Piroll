@@ -1,0 +1,38 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+
+// === work ===
+.section-work {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+
+  &-item{
+    background: linear-gradient(45deg, #dddddd, lightblue);
+    height: 45%;
+    width: 25%;
+  }
+
+  &-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    background-color: #f5f5f5;
+    @include font-montserrat;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: $gray-color;
+
+    &:hover{
+      cursor: pointer;
+      color: $lightblue-color;
+    }
+  }
+
+}
+// === / work ===

@@ -28,7 +28,7 @@ module: {
           'css-loader',
           'sass-loader'
         ]
-      }
+      },
     ]
   },
 };
