@@ -5,8 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title> 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Nunito+Sans&display=swap" rel="stylesheet">
-  <link href="src/scss/style.css" rel="stylesheet">  
-  <script src="src/js/jquery-3.4.1.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -104,7 +102,7 @@
   <!-- Numbers -->
   <section class="section-outer section-numbers" id="numbers">
     <div class="section-inner">
-      <div class="section-numbers-projects">
+      <div class="section-numbers-item">
         <div class="section-numbers__icon">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40" height="40"
          	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -125,7 +123,7 @@
           <div class="section-numbers__title">projects completed</div>
         </div>
       </div>
-      <div class="section-numbers-hours">
+      <div class="section-numbers-item">
         <div class="section-numbers__icon">
           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40" height="40"
           	 viewBox="0 0 41.301 41.301" style="enable-background:new 0 0 41.301 41.301;" xml:space="preserve">
@@ -146,7 +144,7 @@
           <div class="section-numbers__title">working hours</div>
         </div>
       </div>
-      <div class="section-numbers-feedbacks">
+      <div class="section-numbers-item">
         <div class="section-numbers__icon">
           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40" height="40"
           	 viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
@@ -166,7 +164,7 @@
           <div class="section-numbers__title">positive feedbacks</div>
         </div>
       </div>
-      <div class="section-numbers-clients">
+      <div class="section-numbers-item">
         <div class="section-numbers__icon">
           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40" height="40"
           	viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -195,14 +193,16 @@
 
   <!-- Work -->
   <section class="section-outer section-work" id="work">
-    <div class="section-work-item"><img src="#" alt=""></div>
-    <div class="section-work-item"><img src="#" alt=""></div>
-    <div class="section-work-item"><img src="#" alt=""></div>
-    <div class="section-work-item"><img src="#" alt=""></div>
-    <div class="section-work-item"><img src="#" alt=""></div>
-    <div class="section-work-item"><img src="#" alt=""></div>
-    <div class="section-work-item"><img src="#" alt=""></div>
-    <div class="section-work-item"><img src="#" alt=""></div>
+    <div class="section-work-container">
+      <div class="section-work-item"><img src="#" alt=""></div>
+      <div class="section-work-item"><img src="#" alt=""></div>
+      <div class="section-work-item"><img src="#" alt=""></div>
+      <div class="section-work-item"><img src="#" alt=""></div>
+      <div class="section-work-item"><img src="#" alt=""></div>
+      <div class="section-work-item"><img src="#" alt=""></div>
+      <div class="section-work-item"><img src="#" alt=""></div>
+      <div class="section-work-item"><img src="#" alt=""></div>
+    </div>
     <div class="section-work-more">load more work</div>
   </section>
   <!-- / Work -->
@@ -501,29 +501,31 @@
   <!-- Clients -->
   <section class="section-outer section-clients" id="clients">
     <div class="section-inner">
-      <div class="section-clients-item">
-        <div class="section-clients-item__logo">
-          <img src="src/images/client-logo-1.png" alt="">
+      <div class="section-clients-container">
+        <div class="section-clients-item">
+          <div class="section-clients-item__logo">
+            <img src="src/images/client-logo-1.png" alt="">
+          </div>
         </div>
-      </div>
-      <div class="section-clients-item">
-        <div class="section-clients-item__logo">
-          <img src="src/images/client-logo-1.png" alt="">
+        <div class="section-clients-item">
+          <div class="section-clients-item__logo">
+            <img src="src/images/client-logo-1.png" alt="">
+          </div>
         </div>
-      </div>
-      <div class="section-clients-item">
-        <div class="section-clients-item__logo">
-          <img src="src/images/client-logo-1.png" alt="">
+        <div class="section-clients-item">
+          <div class="section-clients-item__logo">
+            <img src="src/images/client-logo-1.png" alt="">
+          </div>
         </div>
-      </div>
-      <div class="section-clients-item">
-        <div class="section-clients-item__logo">
-          <img src="src/images/client-logo-1.png" alt="">
+        <div class="section-clients-item">
+          <div class="section-clients-item__logo">
+            <img src="src/images/client-logo-1.png" alt="">
+          </div>
         </div>
-      </div>
-      <div class="section-clients-item">
-        <div class="section-clients-item__logo">
-          <img src="src/images/client-logo-1.png" alt="">
+        <div class="section-clients-item">
+          <div class="section-clients-item__logo">
+            <img src="src/images/client-logo-1.png" alt="">
+          </div>
         </div>
       </div>
     </div>
@@ -547,7 +549,7 @@
           <input type="text" placeholder="Your Title">
         </div>
         <div class="section-form__input section-form__input_comment">
-          <textarea name="comment" id="" cols="30" rows="10" placeholder="Your Comment"></textarea>
+          <textarea name="comment" id="form-textarea" cols="30" rows="10" placeholder="Your Comment"></textarea>
         </div>
         <div class="section-form__button">
           <button class="button">send message</button>
@@ -594,6 +596,8 @@
   <!-- / Footer -->
 
 
+  <script src="src/js/jquery-3.4.1.min.js"></script>
   <script src="src/js/index.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 </html>
