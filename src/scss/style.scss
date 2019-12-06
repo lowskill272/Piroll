@@ -1,5 +1,4 @@
 @import 'normalize.scss';
-@import 'media.scss';
 @import 'header.scss';
 @import 'about.scss';
 @import 'skills.scss';
@@ -12,6 +11,9 @@
 @import 'form.scss';
 @import 'footer.scss';
 
+$slick-font-path: "../..//node_modules/slick-carousel/slick/fonts/";
+$slick-loader-path: "../..//node_modules/slick-carousel/slick/";
+@import '~slick-carousel/slick/slick', '~slick-carousel/slick/slick-theme';
 
 
 // === Common ===
@@ -28,7 +30,7 @@ html{
 }
 
 .section-inner {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -64,3 +66,4 @@ html{
   }
 }
 // === / Common ===
+@import 'media.scss';

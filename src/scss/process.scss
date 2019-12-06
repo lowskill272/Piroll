@@ -10,10 +10,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
-  .title{
-    padding-top: 100px;
+  .title{    
     margin-bottom: 40px;
     font-size: 30px;
     font-weight: bold;
@@ -30,8 +31,7 @@
     letter-spacing: 0.08px;
   }
 
-  &__video{
-    margin-bottom: 100px;
+  &__video{    
     background: $gray-color;
     height: 60%;
     width: 100%;

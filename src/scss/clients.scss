@@ -5,10 +5,16 @@
 .section-clients {
 
   .section-inner{
-    height: 25vh;
+    display: flex;
+    height: 25vh;    
+  }
+
+  &-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
+    width: 100%;
   }
 
   &-item{

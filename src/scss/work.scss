@@ -4,13 +4,17 @@
 
 // === work ===
 .section-work {
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
+  height: 100vh;  
 
+  &-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 90%;
+    width: 100%;
+  }
   &-item{
     background: linear-gradient(45deg, #dddddd, lightblue);
-    height: 45%;
+    height: 50%;
     width: 25%;
   }
 
