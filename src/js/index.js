@@ -25,6 +25,31 @@ window.addEventListener('scroll', function () {
     } 
 });
 
+if (document.documentElement.clientWidth<576){
+    document.getElementById('form-textarea').rows = 7;
+    $('.section-work-container').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    })
+
+    $('.section-services-wrapper').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+
+    $('.section-clients-container').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+
+}
+   
 
 
 
