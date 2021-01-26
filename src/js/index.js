@@ -1,36 +1,3 @@
-import $ from 'jquery';
-import 'slick-carousel';
-import '../scss/style.scss';
-
-var firebaseConfig = {
-    apiKey: "AIzaSyBVDtZsFiYZGPkk8oUdq71J3J6AnCh_32U",
-    authDomain: "test-29c18.firebaseapp.com",
-    projectId: "test-29c18",
-    storageBucket: "test-29c18.appspot.com",
-    messagingSenderId: "73861637376",
-    appId: "1:73861637376:web:5c85b0c88c33ee552f3fe5",
-    measurementId: "G-CWEXC6CLV8"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
-
-const messaging = firebase.messaging();
-
-messaging.getToken({ vapidKey: '<YOUR_PUBLIC_VAPID_KEY_HERE>' }).then((currentToken) => {
-    if (currentToken) {
-        // Send the token to your server and update the UI if necessary
-        // ...
-        console.log(currentToken)
-    } else {
-        // Show permission request UI
-        console.log('No registration token available. Request permission to generate one.');
-        // ...
-    }
-}).catch((err) => {
-    console.log('An error occurred while retrieving token. ', err);
-    // ...
-});
 
 function isAnyPartOfElementInViewport(el) {
 
@@ -58,7 +25,6 @@ window.addEventListener('scroll', function () {
     } 
 });
 
-
 if (document.documentElement.clientWidth<576){
     document.getElementById('form-textarea').rows = 7;
     $('.section-work-container').slick({
@@ -84,3 +50,31 @@ if (document.documentElement.clientWidth<576){
 
 }
    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
